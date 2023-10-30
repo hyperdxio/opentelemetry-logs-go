@@ -17,8 +17,8 @@ limitations under the License.
 package otel
 
 import (
-	"github.com/agoda-com/opentelemetry-logs-go/internal/global"
-	"github.com/agoda-com/opentelemetry-logs-go/logs"
+	"github.com/hyperdxio/opentelemetry-logs-go/internal/global"
+	"github.com/hyperdxio/opentelemetry-logs-go/logs"
 )
 
 // GetLoggerProvider returns the registered global logger provider.

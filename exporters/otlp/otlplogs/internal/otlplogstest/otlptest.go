@@ -2,9 +2,9 @@ package otlplogstest
 
 import (
 	"context"
-	"github.com/agoda-com/opentelemetry-logs-go/exporters/otlp/otlplogs"
-	"github.com/agoda-com/opentelemetry-logs-go/logs"
-	sdklogs "github.com/agoda-com/opentelemetry-logs-go/sdk/logs"
+	"github.com/hyperdxio/opentelemetry-logs-go/exporters/otlp/otlplogs"
+	"github.com/hyperdxio/opentelemetry-logs-go/logs"
+	sdklogs "github.com/hyperdxio/opentelemetry-logs-go/sdk/logs"
 	"testing"
 	"time"
 

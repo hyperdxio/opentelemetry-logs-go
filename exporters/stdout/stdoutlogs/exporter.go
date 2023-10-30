@@ -18,7 +18,7 @@ package stdoutlogs
 
 import (
 	"context"
-	sdk "github.com/agoda-com/opentelemetry-logs-go/sdk/logs"
+	sdk "github.com/hyperdxio/opentelemetry-logs-go/sdk/logs"
 	"io"
 	"strings"
 	"sync"

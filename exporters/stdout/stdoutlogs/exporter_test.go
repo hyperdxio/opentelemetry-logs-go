@@ -3,9 +3,9 @@ package stdoutlogs
 import (
 	"bytes"
 	"context"
-	otel "github.com/agoda-com/opentelemetry-logs-go"
-	"github.com/agoda-com/opentelemetry-logs-go/logs"
-	sdk "github.com/agoda-com/opentelemetry-logs-go/sdk/logs"
+	otel "github.com/hyperdxio/opentelemetry-logs-go"
+	"github.com/hyperdxio/opentelemetry-logs-go/logs"
+	sdk "github.com/hyperdxio/opentelemetry-logs-go/sdk/logs"
 	"github.com/stretchr/testify/assert"
 	"go.opentelemetry.io/otel/sdk/resource"
 	semconv "go.opentelemetry.io/otel/semconv/v1.21.0"
