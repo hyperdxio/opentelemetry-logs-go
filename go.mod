@@ -1,3 +1,4 @@
+// Deprecated: no longer maintained; use the upstream OpenTelemetry Go logs SDK, go.opentelemetry.io/otel/sdk/log.
 module github.com/hyperdxio/opentelemetry-logs-go
 
 go 1.20
