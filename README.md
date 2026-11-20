@@ -3,6 +3,28 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/hyperdxio/opentelemetry-logs-go.svg)](https://pkg.go.dev/github.com/hyperdxio/opentelemetry-logs-go)
 [![codecov](https://codecov.io/github/hyperdxio/opentelemetry-logs-go/graph/badge.svg?token=F1NW0R0W75)](https://codecov.io/github/hyperdxio/opentelemetry-logs-go)
 
+> **Deprecated:** `github.com/hyperdxio/opentelemetry-logs-go` is no longer
+> maintained. The logs signal in the upstream
+> [OpenTelemetry Go SDK](https://opentelemetry.io/docs/languages/go/) is now
+> stable; use it instead. It sends to ClickStack over OTLP: set
+> `OTEL_EXPORTER_OTLP_ENDPOINT` to your ClickStack endpoint and
+> `OTEL_EXPORTER_OTLP_HEADERS=authorization=<ingestion key>`.
+>
+> - Root package and `logs` (Logs Bridge API): [`go.opentelemetry.io/otel/log`](https://pkg.go.dev/go.opentelemetry.io/otel/log)
+>   and [`go.opentelemetry.io/otel/log/global`](https://pkg.go.dev/go.opentelemetry.io/otel/log/global)
+> - `sdk/logs`: [`go.opentelemetry.io/otel/sdk/log`](https://pkg.go.dev/go.opentelemetry.io/otel/sdk/log)
+> - `exporters/otlp/otlplogs`: [`otlploghttp`](https://pkg.go.dev/go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp)
+>   and [`otlploggrpc`](https://pkg.go.dev/go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc)
+> - `exporters/stdout/stdoutlogs`: [`stdoutlog`](https://pkg.go.dev/go.opentelemetry.io/otel/exporters/stdout/stdoutlog)
+> - `autoconfigure`: [`go.opentelemetry.io/contrib/exporters/autoexport`](https://pkg.go.dev/go.opentelemetry.io/contrib/exporters/autoexport),
+>   which picks the exporter from `OTEL_LOGS_EXPORTER`
+>
+> Upstream log bridges:
+> [`otelslog`](https://pkg.go.dev/go.opentelemetry.io/contrib/bridges/otelslog),
+> [`otelzap`](https://pkg.go.dev/go.opentelemetry.io/contrib/bridges/otelzap),
+> [`otellogrus`](https://pkg.go.dev/go.opentelemetry.io/contrib/bridges/otellogrus)
+> and [`otellogr`](https://pkg.go.dev/go.opentelemetry.io/contrib/bridges/otellogr).
+
 OpenTelemetry-Logs-Go is the [Go](https://golang.org) implementation of [OpenTelemetry](https://opentelemetry.io/) Logs.
 It provides API to directly send logging data to observability platforms. It is an extension of official
 [open-telemetry/opentelemetry-go](https://github.com/open-telemetry/opentelemetry-go) to support Logs.
